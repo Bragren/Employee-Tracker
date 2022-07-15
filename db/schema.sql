@@ -15,3 +15,8 @@ CREATE TABLE roles (
     salary INTEGER NOT NULL,
     1 INTEGER NOT NULL,
 );
+
+CREATE TABLE departments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL
+);
