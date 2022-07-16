@@ -1,9 +1,11 @@
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+INSERT INTO departments (name)
 VALUES
-    ('John', 'Doe', 2, 1),
-    ('Janet', 'Hawks', 1, null),
-    ('Robert', 'Thompson', 3, null),
-    ('Maria', 'Tyler', 1, null);
+    ('Engineering'),
+    ('Sales'),
+    ('HR'),
+    ('Legal');
+
+
 
 INSERT INTO roles (title, salary, department_id)
 VALUES
@@ -12,11 +14,9 @@ VALUES
     ('Sales Associate', 60000, 1),
     ('HR Representative', 80000, 2);
 
-20 lines (18 sloc)  494 Bytes
-
-INSERT INTO departments (name)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-    ('Engineering'),
-    ('Sales'),
-    ('HR'),
-    ('Legal');
+    ('John', 'Doe', 2, 1),
+    ('Janet', 'Hawks', 1, null),
+    ('Robert', 'Thompson', 3, null),
+    ('Maria', 'Tyler', 1, null);
