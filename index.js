@@ -1,10 +1,10 @@
-const inquirer = require('inquirer');
-const cTable = require('console.table');
+const {prompt} = require('inquirer');
+require('console.table');
 
-const db = require('./db/connection');
+// const db = require('./db/connection');
 
 function init() {
-    inquirer.prompt([
+    prompt([
         {
             type: 'list',
             name: 'menu',
@@ -40,13 +40,10 @@ function init() {
             case 'update employee':
                 break;
             default:
-                quit()
+                break;
         }
     });
 };
 
 init();
-function quit() {
-    console.log('goodbye')
-    process.exit()
-}
+
